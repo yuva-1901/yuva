@@ -1,9 +1,157 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> My first html</title>
-    </head>
-    <body>
-        I am a Front-end developer in kodnest!!
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Makeup Products</title>
+  <style>
+    body, h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background:rgb(228, 224, 224);
+  color: #333;
+  line-height: 1.8
+}
+
+header {
+  background-color:rgb(240, 136, 136);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+nav ul li {
+  margin: 0 15px;
+  justify-content: center;
+}
+
+nav ul li a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background:beige;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+ 
+}
+.products article {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.products article:hover {
+  transform: translateY(-10px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+
+.products img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+aside {
+  background:beige;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  border-left: 5px solid #d4af37;
+}
+
+footer {
+  background: rgb(246, 165, 165);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SKY Makeup Products </h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Shine Inside Out</h2>
+      <p><i>Your Beauty,Your Confidence!</i></p>
+    </section>
+<section class="products">
+      <article>
+        <img src="https://makeupstudio.in//uploads/1625053896-Velvet_Foundation_WB3_Natural_Beige.jpg" alt="Foundation ">
+        <h3>Foundation</h3>
+        <p>Foundation provides a smooth and even base for makeup,ensuring a flawless look.</p>
+      </article>
+      <article>
+        <img src="https://ibacosmetics.com/cdn/shop/products/iba-pure-lips-long-stay-matte-lipstick---m10-red-brick_1_1_5afdccac-f502-4175-8f48-78333af01203.png?v=1630580106" alt="Lipstick">
+        <h3>Lipstick</h3>
+        <p>Lipstick enhances the lips with vibrant color and completes any makeup look.</p>
+      </article>
+      <article>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaSo0sSHBF_YBQqCnNwv9WzYdgOkdJiBcwYA&s" alt="Blush">
+        <h3>Blush</h3>
+        <p>Blush adds a natural flush of color to the cheeks for a radiant glow.</p>
+      </article>
+       <article>
+        <img src="https://pixies.in/media/catalog/product/cache/e9780188a08ae15edb442fcb34502371/e/y/eyeshadow_palette_-_shade_02.jpg" alt="Eye Shadow Palette">
+        <h3>Eye Shadow Palette</h3>
+        <p>Create endless eye-catching looks with our eyeshadow palette featuring versatile shades and smooth,blendable textures.</p>
+      </article>
+      <article>
+        <img src="https://rukminim2.flixcart.com/image/704/1056/xif0q/mascara/g/s/9/12-0-ultra-curl-long-lasting-fabulash-mascara-mars-original-imahckyzrcx4wxbn.jpeg?q=90&crop=false" alt="Mascara">
+        <h3>Mascara</h3>
+        <p>Enhances lashes with our mascara for bold volume,rich color,and long-lasting curl.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h4>Festive Offer!</h4>
+      <p>Flat 20% off on bridal makeup. Limited time only!</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SKY Makeup Products. All rights reserved.</p>
+  </footer>
+</body>
 </html>
